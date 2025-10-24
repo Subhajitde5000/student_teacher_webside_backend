@@ -1358,11 +1358,10 @@ if __name__ == "__main__":
         print("🚀 Starting the student_teacher webside.")
         
         # Debug for auto-reload during development
-        app.run(debug=True)
         port = int(os.environ.get("PORT", 5000))
         # Bind to 0.0.0.0 so Render can detect the open port
         app.run(host="0.0.0.0", port=port, debug=False)
-        
+
     except KeyboardInterrupt:
         print("\n🛑 Shutting down the student_teacher webside.")
         print("✅ Cleanup completed. Goodbye!")
