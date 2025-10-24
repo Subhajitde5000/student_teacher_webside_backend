@@ -24,7 +24,7 @@ class DatabaseManager:
             database_name: Name of the database to use
         """
         if connection_string is None:
-            connection_string = os.getenv("MONGODB_URI", "mongodb://localhost:27017/")
+            connection_string = os.getenv("MONGODB_URI", "mongodb+srv://desubhahjit_db_user:Subhajit00@cluster0.sbi6flx.mongodb.net/?appName=Cluster0")
         
         try:
             self.client = MongoClient(connection_string, serverSelectionTimeoutMS=5000)
